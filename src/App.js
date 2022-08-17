@@ -16,7 +16,7 @@ function App() {
       <h4>คำใบ้ : ชื่อของผู้จัดทำ</h4>
       <button
           type="button"
-          class="button"
+          className='button'
           onClick={changeword}
         >Change word</button>
     </div>
