@@ -2,22 +2,22 @@ import React from 'react';
 import './App.css';
 import WordCard from './WordCard';
 
-const word = "Attanon";
-const word2 = "Computer";
-const changeword = () => {
-  <WordCard value={word2}/>
+
+var wordArray = ['Attanon', 'Computer','Java','Apple'];
+var word = wordArray[Math.floor(Math.random()*wordArray.length)];
+
+function refreshPage() {
+  window.location.reload(false);
 }
-
-
 function App() {
   return (
     <div>
       <WordCard value={word}/>
-      <h4>คำใบ้ : ชื่อของผู้จัดทำ</h4>
+      <h4>คำใบ้ : คำศัพท์เกี่ยวกับคอมพิวเตอร์และชื่อคนทำ</h4>
       <button
           type="button"
           className='button'
-          onClick={changeword}
+          onClick={refreshPage}
         >Change word</button>
     </div>
   );
