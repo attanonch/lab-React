@@ -5,7 +5,7 @@ import WordCard from './WordCard';
 const word = "Attanon";
 const word2 = "Computer";
 const changeword = () => {
-  const word2 = word;
+  <WordCard value={word2}/>
 }
 
 function App() {
@@ -13,6 +13,11 @@ function App() {
     <div>
       <WordCard value={word}/>
       <h4>คำใบ้ : ชื่อของผู้จัดทำ</h4>
+      <button
+          type="button"
+          onClick={changeword}
+        >Change word</button>
+        
     </div>
   );
 }
