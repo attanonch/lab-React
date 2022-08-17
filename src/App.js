@@ -8,6 +8,7 @@ const changeword = () => {
   <WordCard value={word2}/>
 }
 
+
 function App() {
   return (
     <div>
@@ -15,9 +16,9 @@ function App() {
       <h4>คำใบ้ : ชื่อของผู้จัดทำ</h4>
       <button
           type="button"
+          class="button"
           onClick={changeword}
         >Change word</button>
-        
     </div>
   );
 }
